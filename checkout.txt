@@ -1,1 +1,16 @@
-main
+1. Mengedit File first.txt:
+Sekarang, tambahkan teks hello ke dalam file first.txt
+`echo "hello" > first.txt`
+
+
+2. Melihat Status dan Mengembalikan Perubahan:
+Jika Anda menjalankan git status, Anda akan melihat bahwa first.txt tidak di-stage untuk commit. Untuk mengembalikan perubahan ini, Anda dapat menggunakan git checkout
+`git status`
+`git checkout -- first.txt`
+
+Setelah menjalankan perintah di atas, perubahan yang Anda buat pada first.txt akan dikembalikan ke kondisi sebelumnya, dan file akan kembali kosong.
+
+
+3. Melihat Isi File first.txt:
+Anda dapat menggunakan perintah cat atau more (tergantung pada sistem operasi Anda) untuk memeriksa isi file first.txt:
+`cat first.txt  # atau more first.txt di Windows`
