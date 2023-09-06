@@ -1,0 +1,14 @@
+Untuk mengganti nama file atau direktori di PowerShell. Berikut adalah cara mengganti nama sebuah file:
+
+1. Buka Windows PowerShell.
+
+2. Gunakan perintah Rename-Item dengan path file yang ingin Anda ganti namanya. Misalnya:
+`Rename-Item -Path "C:\Path\To\Your\File\OldName.txt" -NewName "NewName.txt" `
+Gantilah ("C:\Path\To\Your\File\OldName.txt") dengan path lengkap file yang ingin Anda ganti namanya, dan ("NewName.txt") dengan nama baru yang ingin Anda berikan kepada file tersebut.
+Contoh di atas akan mengganti nama file "OldName.txt" menjadi "NewName.txt".
+
+
+3.Setelah menjalankan perintah tersebut, file akan memiliki nama baru sesuai dengan yang Anda tentukan.
+Jika Anda ingin mengganti nama sebuah direktori (folder), Anda dapat menggunakan perintah yang sama dengan mengganti path ke direktori yang ingin Anda ganti namanya.
+
+Pastikan Anda memiliki izin yang cukup untuk melakukan perubahan nama pada file atau direktori yang Anda tuju.
