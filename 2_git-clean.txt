@@ -12,15 +12,15 @@ Cara kerja git clean adalah sebagai berikut:
 
 Contoh penggunaan umum:
 Menampilkan daftar file yang akan dihapus tanpa benar-benar menghapusnya:
-`git clean -n`
+```git clean -n```
 
 Menghapus file yang belum dilacak secara permanen (folder tidak terhapus):
-`git clean -f`
+```git clean -f```
 
 Menghapus file dan direktori (folder dan seisinya) yang belum dilacak secara rekursif:
-`git clean -df`
+```git clean -df```
 
 Menampilkan command:
-`git clean -i`
+```git clean -i```
 
 Pastikan Anda berhati-hati saat menggunakan perintah git clean, terutama jika Anda tidak yakin apakah file yang akan dihapus masih diperlukan atau tidak.

@@ -3,12 +3,15 @@ Untuk membuat folder baru (direktori) di Windows PowerShell, Anda dapat mengguna
 1. Buka Windows PowerShell.
 
 2a. Gunakan perintah New-Item diikuti dengan path lengkap atau relatif ke folder yang ingin Anda buat. Misalnya, jika Anda ingin membuat folder "MyFolder" di Desktop, Anda dapat mengetik:
-`New-Item -ItemType Directory -Path C:\Users\YourUsername\Desktop\MyFolder`
-(Gantilah YourUsername dengan nama pengguna Anda)
+    
+    `New-Item -ItemType Directory -Path C:\Users\YourUsername\Desktop\MyFolder`
+    (Gantilah YourUsername dengan nama pengguna Anda)
+
 
 2b.Jika Anda ingin membuat folder di lokasi saat ini di PowerShell, Anda dapat hanya menuliskan nama folder setelah perintah New-Item, seperti ini:
-`New-Item -ItemType Directory -Name MyFolder`
-Perintah di atas akan membuat folder baru di lokasi saat ini di PowerShell.
+    
+    `New-Item -ItemType Directory -Name MyFolder`
+    Perintah di atas akan membuat folder baru di lokasi saat ini di PowerShell.
 
 
 3. Setelah menjalankan perintah, folder baru akan dibuat
