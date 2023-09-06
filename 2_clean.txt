@@ -1,0 +1,26 @@
+`git clean` adalah perintah dalam Git yang digunakan untuk menghapus file atau direktori yang belum dilacak (untracked) dalam direktori kerja Anda. Perintah ini digunakan untuk membersihkan direktori kerja Anda dari file yang tidak terkelola oleh Git. Ini adalah salah satu cara untuk menjaga direktori kerja Anda tetap bersih dan hanya berisi file yang terkait dengan repositori Git.
+
+Cara kerja git clean adalah sebagai berikut:
+1. Identifikasi File yang Tidak Dilacak: Git akan memeriksa direktori kerja Anda untuk menemukan semua file dan direktori yang belum dilacak. File yang belum dilacak adalah file yang belum ditambahkan ke repositori Git dengan perintah git add. Ini adalah file yang Git tidak sadar dan tidak mengelolanya.
+
+2. Konfirmasi Penghapusan: Secara default, git clean akan menampilkan daftar file yang akan dihapus tanpa benar-benar menghapusnya. Ini adalah tindakan berjaga-jaga agar Anda tidak menghapus file yang sebenarnya masih diperlukan.
+
+3. Menghapus File atau Direktori: Jika Anda ingin menghapus file dan direktori yang belum dilacak, Anda dapat menjalankan perintah git clean -f atau git clean -df. -f (atau --force) adalah opsi yang memaksa penghapusan file, dan -d (atau --directory) digunakan untuk menghapus direktori beserta isinya secara rekursif. Jika Anda hanya ingin menghapus file yang belum dilacak tanpa menghapus direktori kosong, Anda dapat menggunakan git clean -f.
+
+4. Penghapusan yang Bersifat Permanen: Penting untuk diingat bahwa perintah git clean akan menghapus file secara permanen dari direktori kerja Anda. Ini berarti penghapusan tidak dapat dibatalkan. Oleh karena itu, gunakanlah perintah ini dengan hati-hati dan pastikan Anda yakin bahwa file yang akan dihapus benar-benar tidak diperlukan lagi.
+
+
+Contoh penggunaan umum:
+Menampilkan daftar file yang akan dihapus tanpa benar-benar menghapusnya:
+`git clean -n`
+
+Menghapus file yang belum dilacak secara permanen (folder tidak terhapus):
+`git clean -f`
+
+Menghapus file dan direktori (folder dan seisinya) yang belum dilacak secara rekursif:
+`git clean -df`
+
+Menampilkan command:
+`git clean -i`
+
+Pastikan Anda berhati-hati saat menggunakan perintah git clean, terutama jika Anda tidak yakin apakah file yang akan dihapus masih diperlukan atau tidak.
