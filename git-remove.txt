@@ -1,0 +1,18 @@
+Untuk menghapus file atau folder dari Git dan dari repositori Git Anda, Anda dapat menggunakan perintah git rm atau git rm -r jika Anda ingin menghapus sebuah folder beserta isinya. Perintah ini akan menghapus file atau folder dari Git dan juga akan menghapusnya dari sistem file Anda (working directory) jika Anda menjalankan perintah dengan opsi -f (force) dan melakukan commit. Berikut adalah langkah-langkahnya:
+
+1. Menghapus File:
+    `git rm NAMA_FILE`
+
+2. Menghapus Folder (beserta Isinya):
+    `git rm -r NAMA_FOLDER`
+
+
+Catatan Penting:
+
+Setelah menjalankan perintah git rm, Anda harus melakukan commit untuk mengkonfirmasi penghapusan tersebut. Gunakan git commit untuk melakukan commit setelah menjalankan git rm.
+
+Jika Anda ingin menghapus file atau folder dari sistem file Anda tanpa menghapusnya dari Git (tetapi masih di-tracking oleh Git), Anda dapat menggunakan git rm --cached. Ini akan menghapusnya dari staging area Git tanpa menghapusnya dari sistem file Anda.
+
+Pastikan untuk berhati-hati saat menggunakan perintah git rm, terutama jika Anda ingin menghapus file atau folder secara permanen dari repositori Git dan sistem file Anda. Penghapusan dengan git rm bersifat permanen.
+
+Jika Anda hanya ingin menghapus file atau folder dari working directory tanpa menghapusnya dari Git atau repositori, Anda dapat menggunakan perintah rm untuk Linux/Mac atau del untuk Windows. Ini hanya akan menghapusnya dari sistem file Anda, dan perubahan tersebut akan terlihat sebagai "untracked" oleh Git pada commit selanjutnya.
