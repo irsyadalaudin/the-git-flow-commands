@@ -1,0 +1,17 @@
+1. Mengubah Nama File
+Di dalam direktori repositori, ubah nama file yang ingin Anda ganti dengan perintah mv (mengganti nama file). Misalnya, jika Anda ingin mengganti nama "file_lama.txt" menjadi "file_baru.txt," jalankan perintah berikut:
+    `mv file_lama.txt file_baru.txt`
+
+2. Mengganti Nama di Git
+Setelah Anda mengubah nama file secara lokal, tambahkan perubahan tersebut ke staging area dengan perintah git add.
+    `git add file_baru.txt`
+
+3. Kemudian, buat commit dengan pesan yang menjelaskan perubahan yang Anda lakukan.
+    `git commit -m "Mengganti nama file_lama.txt menjadi file_baru.txt"`
+
+4. Push perubahan Anda kembali ke repositori GitHub.
+    `git push origin nama-branch`
+
+5. Hapus File Lama (Opsional)
+Anda juga dapat menghapus file lama yang tidak Anda perlukan lagi dengan menggunakan perintah git rm. Misalnya, jika Anda ingin menghapus "file_lama.txt," jalankan perintah berikut:
+    `git rm <file_lama>`
