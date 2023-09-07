@@ -1,0 +1,24 @@
+Untuk membatalkan atau menghapus commit yang telah dilakukan dalam Git, dapat menggunakan perintah git reset.
+Terdapat tiga opsi yang bisa digunakan dengan perintah git reset, yaitu:
+
+1. `git reset --soft COMMIT_SHA` - Memindahkan perubahan yang telah di-commit ke dalam staging area. Artinya, perubahan tersebut akan siap untuk di-commit kembali.
+
+2. `git reset --mixed COMMIT_SHA` - Memindahkan perubahan yang telah di-commit kembali ke dalam working directory. Perubahan ini tidak akan disimpan di staging area.
+
+3. `git reset --hard COMMIT_SHA` - Membatalkan sepenuhnya commit beserta perubahan yang ada dalam commit tersebut. Ini merupakan tindakan yang berbahaya karena perubahan yang ada dalam commit akan dihapus secara permanen.
+
+`COMMIT_SHA` adalah kode identifikasi unik dari setiap commit yang digunakan untuk mengidentifikasi commit tertentu. Anda dapat melihat kode ini dengan menjalankan perintah git log --oneline, yang akan menampilkan pesan commit dan kode identifikasi singkat dari setiap commit.
+
+Penting untuk diingat bahwa perintah git reset tidak akan mengubah commit yang Anda pindahkan ke belakang. Artinya, jika Anda memiliki beberapa commit, menggunakannya tidak akan memengaruhi commit yang Anda pilih untuk "dihapus," tetapi akan memengaruhi commit yang ada setelahnya.
+
+Sebagai contoh, jika Anda memiliki 4 commit seperti ini:
+    a808698 - Commit Keempat
+    ca0bbb4 - Commit Ketiga
+    5ffcac5 - Commit Kedua
+    ac49968 - Commit Pertama
+Dan Anda ingin memindahkan dua commit terakhir ke dalam staging area, Anda dapat menjalankan perintah:
+
+git reset --soft 5ffcac5
+Ini akan memindahkan perubahan dari Commit Keempat dan Commit Ketiga ke dalam staging area sehingga Anda dapat mengedit atau mengkomit ulang perubahan tersebut.
+
+Perlu diingat bahwa perintah git reset --hard adalah tindakan yang sangat berbahaya karena menghapus perubahan dalam commit secara permanen. Hanya gunakan opsi ini jika Anda benar-benar yakin bahwa Anda ingin menghapus commit beserta perubahannya.
